@@ -22,9 +22,9 @@ Don't forget to adjust the kernel config, too!
 These don't include the time to download sources (i.e. `make source`)
 
 ### c4-2xlarge AWS instance
-real    7m50.153s
+```real    7m50.153s
 user    31m32.812s
-sys     2m2.092s
+sys     2m2.092s```
 
 Because I forgot to hit "spot instance", this build cost $0.07, based on a us-west-1b per-hour cost of $USD0.524
 
