@@ -5,13 +5,14 @@
 
 You can check that you have everything with `make core-dependencies`
 
+## Building
 First clone `buildroot` with `git clone --depth=1 -b 2016.02-rc2 git://git.busybox.net/buildroot`
 Then clone this repository with `git clone https://github.com/baxterworks-build/buildroot-skeleton`
 
 Then:
 ```bash
 cd buildroot-skeleton
-make example_buildroot_defconfig && make
+make skeleton_defconfig && make
 ```
 
 But you probably want to rename the defconfig, make your_new_buildroot_defconfig && make menuconfig first
