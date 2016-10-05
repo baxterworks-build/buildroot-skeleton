@@ -1,0 +1,4 @@
+config BR2_PACKAGE_BUILDROOT
+	bool "buildroot 2016.08"
+	help
+		This is buildroot itself!

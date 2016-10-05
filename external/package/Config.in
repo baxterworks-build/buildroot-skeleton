@@ -1,0 +1,1 @@
+source "$BR2_EXTERNAL/package/buildroot/Config.in"
