@@ -1,1 +1,2 @@
 source "$BR2_EXTERNAL/package/buildroot/Config.in"
+source "$BR2_EXTERNAL/package/static-compilers/Config.in"

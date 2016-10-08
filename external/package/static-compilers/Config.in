@@ -1,0 +1,4 @@
+config BR2_PACKAGE_STATIC_COMPILERS
+	depends on BR2_x86_64
+	bool "Static compilers from Aboriginal Linux (landley.net)"
+
