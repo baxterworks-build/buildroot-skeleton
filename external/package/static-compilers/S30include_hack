@@ -1,0 +1,5 @@
+#!/bin/sh
+tar --directory=/usr -xvf /usr/include.tar
+tar --directory=/usr -xvf /usr/lib.tar
+
+rm /usr/*.tar
