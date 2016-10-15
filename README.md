@@ -1,12 +1,12 @@
 # Minimal buildroot config to use for other, more interesting things
 
 ## Prereqs (Debian 8)
-`sudo apt-get install make gcc g++ unzip bc bzip2 libncurses5-dev`
+`sudo apt-get install git make gcc g++ unzip bc bzip2 libncurses5-dev`
 
 You can check that you have everything with `make core-dependencies` (note that this won't check ncurses for `make menuconfig`)
 
 ## Building
-First clone `buildroot` with `git clone --depth=1 -b 2016.08 git://git.busybox.net/buildroot`
+First clone `buildroot` with `git clone --depth=1 git://git.busybox.net/buildroot`
 Then clone this repository with `git clone https://github.com/baxterworks-build/buildroot-skeleton`
 
 Then:
