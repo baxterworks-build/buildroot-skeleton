@@ -6,7 +6,7 @@ git:
 
 env:
   global:
-    - MAKEFLAGS="-j 2"
+    - MAKEFLAGS="-j 2 -s"
 
 script: ./build-travis.sh
 
