@@ -5,7 +5,7 @@ env:
   global:
     - MAKEFLAGS="-j 2"
 
-script: git clone --depth=1 https://github.com/buildroot/buildroot ../buildroot && make skeleton_defconfig && make source && ls ../buildroot
+script: ./build-travis.sh
 
 cache:
   directories:
