@@ -1,0 +1,12 @@
+language: bash
+
+env:
+  global:
+    - MAKEFLAGS="-j 2"
+
+script: make
+
+notifications:
+  email:
+    on_success: change # default: change
+    on_failure: change # default: always
