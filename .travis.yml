@@ -1,10 +1,11 @@
 language: bash
+group: edge
 
 env:
   global:
     - MAKEFLAGS="-j 2"
 
-script: pwd && git clone https://github.com/buildroot/buildroot ../buildroot && make
+script: git clone --depth=1 https://github.com/buildroot/buildroot ../buildroot && make skeleton_defconfig && make
 
 notifications:
   email:
