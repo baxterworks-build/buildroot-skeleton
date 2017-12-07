@@ -4,7 +4,7 @@ env:
   global:
     - MAKEFLAGS="-j 2"
 
-script: make
+script: pwd && git clone https://github.com/buildroot/buildroot ../buildroot && make
 
 notifications:
   email:
