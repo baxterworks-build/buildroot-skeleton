@@ -1,6 +1,9 @@
 language: bash
 group: edge
 
+git:
+  depth: 3
+
 env:
   global:
     - MAKEFLAGS="-j 2"
