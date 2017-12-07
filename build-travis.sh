@@ -12,4 +12,4 @@ if [ ! -f "../buildroot/Makefile" ]; then
     mv ../buildroot-dl ../buildroot/dl
 fi
 
-make skeleton_defconfig && make source && ls ../buildroot
+make skeleton_defconfig && make source && make
