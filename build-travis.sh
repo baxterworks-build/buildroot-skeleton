@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -d "../buildroot"]
+if [ ! -d "../buildroot" ]; then
     git clone --depth=1 https://github.com/buildroot/buildroot ../buildroot
 fi
 
