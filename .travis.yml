@@ -10,3 +10,5 @@ notifications:
   email:
     on_success: change # default: change
     on_failure: change # default: always
+    
+#Thanks to @duckinator for this idea. Now build, damnit!
