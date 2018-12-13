@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-apt -y install git
+sudo apt update && apt -y install git
 
 #silly dance because I'm caching something inside a path that will be a git repo
 if [ ! -f "../buildroot/Makefile" ]; then
