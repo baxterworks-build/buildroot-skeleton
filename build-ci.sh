@@ -1,17 +1,7 @@
 #!/bin/bash
 set -e
-
-apt update && apt -y install --no-install-recommends git
-
-#silly dance because I'm caching something inside a path that will be a git repo
-if [ ! -f "../buildroot/Makefile" ]; then
-
-#    if [ -d "../buildroot/dl" ]; then
-#        mv ../buildroot/dl ../buildroot-dl || true
-#    fi
-
-    git clone --depth=1 https://github.com/buildroot/buildroot ../buildroot
-#    mv ../buildroot-dl ../buildroot/dl
-fi
+mkdir ../buildroot && pushd ../buildroot
+curl -L https://github.com/buildroot/buildroot/archive/master.tar.gz | tar --strip-components 1 -zxf -
+popd
 
 make skeleton_defconfig && make source && make -s
