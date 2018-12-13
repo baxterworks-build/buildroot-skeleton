@@ -5,4 +5,4 @@ steps:
 - name: frontend
   image: ubuntu:latest
   commands:
-  - ./build-travis.sh
+  - ./build-ci.sh

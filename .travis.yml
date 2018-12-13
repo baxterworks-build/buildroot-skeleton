@@ -8,7 +8,7 @@ env:
   global:
     - MAKEFLAGS="-j 2"
 
-script: ./build-travis.sh
+script: ./build-ci.sh
 
 cache:
   directories:
