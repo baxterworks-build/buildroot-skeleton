@@ -1,7 +1,7 @@
 # Minimal buildroot config to use for other, more interesting things
 
 ## Prereqs (Debian 8)
-`sudo apt-get install git make gcc g++ unzip bc bzip2 libncurses5-dev python`
+`sudo apt-get install git make gcc g++ unzip bc bzip2 libncurses5-dev python patch wget cpio rsync`
 
 You can check that you have everything with `make core-dependencies` (note that this won't check ncurses for `make menuconfig`)
 
