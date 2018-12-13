@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+- name: frontend
+  image: ubuntu:latest
+  commands:
+  - ./build-travis.sh
