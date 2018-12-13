@@ -2,7 +2,7 @@ kind: pipeline
 name: default
 
 steps:
-- name: frontend
+- name: buildroot-skeleton-ci
   image: ubuntu:latest
   commands:
   - ./build-ci.sh
