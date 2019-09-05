@@ -3,7 +3,20 @@
 ## Prereqs (Debian 8)
 `sudo apt-get install git make gcc g++ unzip bc bzip2 libncurses5-dev python patch wget cpio rsync libelf-dev`
 
-You can check that you have everything with `make core-dependencies` (note that this won't check ncurses for `make menuconfig`)
+You can check that you have everything with `make dependencies` (note that this won't check ncurses for `make menuconfig`)
+
+e.g, with only gcc installed:
+
+```
+$ make skeleton_defconfig && make dependencies
+
+You may have to install 'g++' on your build machine
+You must install 'python' on your build machine
+You must install 'unzip' on your build machine
+You must install 'bc' on your build machine
+```
+
+
 
 ## Building
 First clone `buildroot` with `git clone --depth=1 git://git.busybox.net/buildroot`
